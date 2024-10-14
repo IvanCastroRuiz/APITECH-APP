@@ -7,19 +7,27 @@ import Rombo from "../assets/img/Rombo.png";
 import testi1 from "../assets/img/testi1.png";
 import testi2 from "../assets/img/testi2.png";
 import testi3 from "../assets/img/testi3.png";
+import Rombo_verde from "../assets/img/Rombo_verde.png";
+import Rombo_amarillo from "../assets/img/Rombo_amarillo.png";
+import LOGO_apitech_verde from "../assets/img/LOGO_apitech_verde06.svg";
+import {  FaWhatsapp  } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import iG from "../assets/img/iG.png";
+import Facebook from "../assets/img/facebook.png";
+
 
 
 
 
 const AuthLayout = () => {
+  
+
     return (
-        <div className="min-h-screen bg-[#003643] text-white relative overflow-hidden">
+        <div className="inset-8 min-h-screen flex flex-col bg-[#003643] text-white relative overflow-hidden" style={{
+          backgroundImage: `url(${`${Rombo_verde}?height=400&width=00`})`,
+         }}>
           {/* Hexagon pattern background */}
-          <div className="absolute inset-0 opacity-10" style={{
-            // backgroundImage: `url(${LOGO_apitech_verde06})`,
-            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23ffffff' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}></div>
-          
+        
           <div className="container mx-auto px-4 py-8 relative z-10">
             {/* Header */}
             <header className="flex items-center justify-between mb-12">
@@ -42,8 +50,10 @@ const AuthLayout = () => {
                 <div className="w-1/2 flex justify-end space-x-4">
                   <img src={`${MobileMockup}?height=400&width=00`} alt="Phone 1" className="w-3/3 object-contain" />
                 </div>
-              </div>
-
+                </div>
+                
+              
+              
               {/* App store buttons */}
               <div className="flex items-center mb-12">
                 <button className=" px-6 py-3 rounded-lg flex items-center mr-4">
@@ -56,6 +66,7 @@ const AuthLayout = () => {
                 <span className="text-xl font-semibold">*prueba gratis Máximo 5 colmenas</span>
               </div>
             </main>
+                </div>
 
             {/* Benefits section */}
             <section className="bg-[#FEDE9D] text-black p-30 rounded-lg  mb-">
@@ -147,88 +158,128 @@ const AuthLayout = () => {
                 <p className="text-sm">
                   "Con la app, llevar el control de mis colmenas es mucho más fácil. Los sensores me muestran el peso de cada colmena, entonces sé cuándo es el momento justo para cosechar la miel. Lo mejor es que no tengo que estar yendo a cada apiario a cada rato, puedo ver desde el celular y eso me ahorra plata y tiempo."
                 </p>
-                <div className="absolute top-0 right-0 w-4 h-4 bg-[#003643] transform rotate-45 translate-x-1/2 -translate-y-1/2"></div>
+                <div className="absolute top-0 right-0 w-4 h-4 transform rotate-45 translate-x-1/2 -translate-y-1/2"></div>
               </div>
             </div>
+             {/* Aquí ajustamos la nueva alineación del texto y botón */}
             
+            
+  {/* Contenido de la sección */}
 
-            {/* Message above footer */}
-            <div className="min-h-screen bg-[#003643] text-white relative overflow-hidden">
-              <div className="container mx-auto px-4 py-8 relative z-10">
-                <main className="mb-12">
-                  <div className="flex flex-col md:flex-row items-center justify-between mb-8">
-                    <div className="w-full md:w-1/2 mb-8 md:mb-0">
-                      <h1
-                        className="text-[55px] font-bold uppercase mb-6 text-[#F3A42B]"
-                        style={{ fontFamily: "Russo One, sans-serif" }}
-                      >
-                        LLEVA LA GESTION DE{" "}
-                        <span className="text-[#FFC91C]">TUS APIARIOS</span> AL SIGUIENTE
-                        NIVEL
-                      </h1>
-                      <p
-                        className="text-2xl mb-8"
-                        style={{ fontFamily: "Poppins, sans-serif" }}
-                      >
-                        Registra monitorea y aprende todo lo necesario para maximizar el
-                        rendimiento de tus apiarios con sensores avanzados y guias expertas
-                      </p>
-                    </div>
-                    <div className="w-full md:w-1/2 flex justify-center md:justify-end space-x-4">
-                      <div className="relative w-40 h-12">
-                        
-                      </div>
-                      <div className="relative w-40 h-12">
-                      
-                        
-                      </div>
-                    </div>
-                  </div>
 
-                  {/* Aquí ajustamos la nueva alineación del texto y botón */}
-                  <div className="w-full md:w-1/2 flex flex-col items-start justify-start">
-                    <p className="text-lg mb-6 max-w-2xl">
-                      Adquiere el sistema de sensores para tus colmenas y monitorea la
-                      temperatura, humedad y peso en tiempo real
-                    </p>
-                    <button className="bg-[#25D366] text-white px-6 py-3 rounded-full flex items-center justify-center hover:bg-[#128C7E] transition-colors duration-300">
-                      <MessageSquare className="w-6 h-6 mr-2" />
-                      Cotizar sistema de monitoreo remoto
-                    </button>
-                  </div>
-                </main>
+             
+      {/* Hexagonal background pattern */}
+      <section className="bg-[#003643] text-white py-16 px-4">
+      <div className="container mx-auto">
+        <div className="flex flex-col lg:flex-row items-start justify-between">
+          <div className="lg:w-1/2 mb-8 lg:mb-0">
+            <h1 className="text-4xl lg:text-5xl font-bold text-[#FFA500] mb-6">
+              LLEVA LA GESTIÓN DE TUS APIARIOS AL SIGUIENTE NIVEL
+            </h1>
+          </div>
+          <div className="w-full md:w-1/2 flex flex-col items-center">
+            <div className="flex space-x-4 mb-6">
+            <img src={`${Play_Store}?height=400&width=00`} alt="" className="w-1/3 rounded-full" />
+            <img src={`${app_Store}?height=400&width=00`} alt="" className="w-1/3 rounded-full" />
+              
 
-                {/* Aquí puedes agregar el resto del contenido de la página */}
-                {/* Footer */}
-                <footer className="bg-[#F49C2C] text-white py-8 px-4 rounded-t-lg mt-12">
-                  <div className="flex flex-wrap justify-between items-start">
-                    <div className="mb-4 md:mb-0">
-                      <h4 className="text-2xl font-bold mb-2">ApiTech</h4>
-                      <p className="text-sm">
-                        Este es un producto desarrollado por Apiser S.A
-                      </p>
-                      <p className="text-sm">Todos los derechos reservados</p>
-                    </div>
-                    <div className="flex flex-col md:flex-row md:items-center">
-                      <a href="#" className="text-sm hover:underline mb-2 md:mb-0 md:mr-4">
-                        Política de privacidad
-                      </a>
-                      <a href="#" className="text-sm hover:underline mb-2 md:mb-0 md:mr-4">
-                        Términos de uso
-                      </a>
-                      <div className="text-sm">
-                        <p className="mb-1">Contáctenos:</p>
-                        <p className="mb-1">Teléfono: +1 234 567 890</p>
-                        <p>Email: info@apitech.com</p>
-                      </div>
-                    </div>
-                  </div>
-                </footer>
+            </div>
+            <p className="text-lg mb-6 text-center lg:text-right">
+              Adquiere el sistema de sensores para tus colmenas y monitorea la temperatura, humedad y peso en tiempo real
+            </p>
+            <button className="bg-[#25D366] text-white px-6 py-3 rounded-full flex items-center hover:bg-[#128C7E] transition-colors duration-300">
+              <FaWhatsapp className="mr-2" />
+                <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#003643]">
+                  Cotizar sistema de monitoreo remoto
+                 </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+          {/* Footer */}
+          
+
+    <footer 
+      className="bg-[#f5A528] text-white py-8 px-4 rounded-t-lg mt-12" 
+      style={{ backgroundImage: `url(${Rombo_amarillo}?height=400&width=00)` }}
+    >
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+
+          {/* Primer contenedor */}
+          <div className="flex flex-col items-start col-span-1 sm:col-span-2 lg:col-span-1">
+            <h4 className="text-4xl mb-4"></h4>
+            <img src={`${LOGO_apitech_verde}?height=400&width=00`} alt="ApiTech Logo" width={200} height={100} className="w-2/3 object-contain mb-4" />              
+            <p className="text-[#003643]">Este es un producto desarrollado por</p>
+            <p className="text-[#003643] font-bold">Apiser S.A.</p>
+            <p className="text-[#003643]">Todos los derechos reservados</p>
+          </div>
+
+          {/* Segundo contenedor */}
+          <div className="space-y-4 text-[#003643]">
+            <h3 className="text-xl font-bold"></h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to ="/politica-privacidad" className="hover:underline">
+                  Política de privacidad
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Tercer contenedor */}
+          <div className="space-y-4 text-[#003643]">
+            <h3 className="text-xl font-bold"></h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to ="/terminos-uso" className="hover:underline">
+                  Términos de uso
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Cuarto contenedor */}
+          <div className="text-[#003643]">
+            <p className="mb-1">Contáctenos:</p>
+            <p>Email: apisersas@gmail.com</p>
+            <p className="mb-1">Teléfono: 321 9856591</p>
+
+            <div className="flex items-center">
+              <FaWhatsapp className="text-[#003643] w-6 h-6 mr-2" />
+              <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#003643]">
+                WhatsApp
+              </a>
+            </div>
+          </div>
+
+          {/* Quinto contenedor */}
+          <div className="flex flex-col items-start space-y-4">
+            <h3 className="text-[#003643] font-bold mb-2">Síguenos</h3>
+            <div className="flex flex-col space-y-4">
+              <div className="flex items-center space-x-4">
+                <img src={`${iG}?height=400&width=00`} alt="Instagram" width={40} height={40} className="rounded-full" />
+                <a href="https://www.instagram.com/apicultura_serrano/" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#003643]">
+                  Instagram
+                </a>
+              </div>
+              <div className="flex items-center space-x-4">
+                <img src={`${Facebook}?height=400&width=00`} alt="Facebook" width={40} height={40} className="rounded-full" />
+                <a href="https://www.facebook.com/photo/?fbid=751403433665245&set=pcb.751403463665242" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#003643]">
+                  Facebook
+                </a>
               </div>
             </div>
           </div>
+
         </div>
+      </div>
+    </footer>
+  
+</div>
+        
     )
-};
+   };
 
 export default  AuthLayout ;

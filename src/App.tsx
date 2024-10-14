@@ -1,6 +1,7 @@
 
 import {BrowserRouter, Routes, Route } from 'react-router-dom'
-import  AuthLayout  from './layout/AuthLayout'  // te hacia falta en el import AuthLayout
+import AuthLayout from './layout/AuthLayout'
+ // te hacia falta en el import AuthLayout
 
 
 function App() {
@@ -9,6 +10,9 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<AuthLayout/>}>
+      
+      
+      
       
       
         
