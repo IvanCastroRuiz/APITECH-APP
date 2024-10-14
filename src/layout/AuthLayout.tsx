@@ -169,7 +169,7 @@ const AuthLayout = () => {
                   </p>
                   <button className="bg-[#25D366] text-white px-6 py-3 rounded-full flex items-center hover:bg-[#128C7E] transition-colors duration-300">
                     <FaWhatsapp className="mr-2" />
-                      <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#003643]">
+                      <a href="https://wa.me/message/FOAVI6X7UGWPK1" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#003643]">
                         Cotizar sistema de monitoreo remoto
                       </a>
                   </button>
@@ -226,7 +226,7 @@ const AuthLayout = () => {
 
                   <div className="flex items-center">
                     <FaWhatsapp className="text-[#003643] w-6 h-6 mr-2" />
-                    <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#003643]">
+                    <a href="https://wa.me/message/FOAVI6X7UGWPK1" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#003643]">
                       WhatsApp
                     </a>
                   </div>
