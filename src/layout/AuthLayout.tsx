@@ -13,10 +13,7 @@ import LOGO_apitech_verde from "../../public/img/LOGO_apitech_verde06.svg";
 import {  FaWhatsapp  } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import iG from "../../public/img/iG.png";
-import Facebook from "../../public/img/facebook.png";
-
-
-
+import Facebook from "../../public/img/Facebook.png";
 
 
 const AuthLayout = () => {
