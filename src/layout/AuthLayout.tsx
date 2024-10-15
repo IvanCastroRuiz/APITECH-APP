@@ -188,7 +188,7 @@ const AuthLayout = () => {
                 {/* Primer contenedor */}
                 <div className="flex flex-col items-start col-span-1 sm:col-span-2 lg:col-span-1">
                   <h4 className="text-4xl mb-4"></h4>
-                  <img src={`${LOGO_apitech_verde}?height=400&width=00`} alt="ApiTech Logo" width={200} height={100} className="w-2/3 object-contain mb-4" />              
+                  <img src={LOGO_apitech_verde} alt="ApiTech Logo" width={200} height={100} className="w-2/3 object-contain mb-4" />              
                   <p className="text-[#003643]">Este es un producto desarrollado por</p>
                   <p className="text-[#003643] font-bold">Apiser S.A.</p>
                   <p className="text-[#003643]">Todos los derechos reservados</p>
@@ -237,13 +237,13 @@ const AuthLayout = () => {
                   <h3 className="text-[#003643] font-bold mb-2">Síguenos</h3>
                   <div className="flex flex-col space-y-4">
                     <div className="flex items-center space-x-4">
-                      <img src={`${iG}?height=400&width=00`} alt="Instagram" width={40} height={40} className="rounded-full" />
+                      <img src={iG} alt="Instagram" width={40} height={40} className="rounded-full" />
                       <a href="https://www.instagram.com/apicultura_serrano/" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#003643]">
                         Instagram
                       </a>
                     </div>
                     <div className="flex items-center space-x-4">
-                      <img src={`${Facebook}?height=400&width=00`} alt="Facebook" width={40} height={40} className="rounded-full" />
+                      <img src={Facebook} alt="Facebook" width={40} height={40} className="rounded-full" />
                       <a href="https://www.facebook.com/photo/?fbid=751403433665245&set=pcb.751403463665242" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#003643]">
                         Facebook
                       </a>
