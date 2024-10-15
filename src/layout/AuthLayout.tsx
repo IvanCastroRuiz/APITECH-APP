@@ -1,25 +1,25 @@
 import { MessageSquare } from "lucide-react"
-import MobileMockup from "../../public/img/MobileMockup.png";
-import LOGO_apitech_amari05 from "../../public/img/LOGO_apitech_amari05.svg";
-import app_Store from "../../public/img/app_Store.png";
-import Play_Store from "../../public/img/Play_Store.png";
-import Rombo from "../../public/img/Rombo.png";
-import testi1 from "../../public/img/testi1.png";
-import testi2 from "../../public/img/testi2.png";
-import testi3 from "../../public/img/testi3.png";
-import Rombo_verde from "../../public/img/Rombo_verde.png";
-import Rombo_amarillo from "../../public/img/Rombo_amarillo.png";
-import LOGO_apitech_verde from "../../public/img/LOGO_apitech_verde06.svg";
+import MobileMockup from "../assets/MobileMockup.png"; //MobileMockup.png
+import LOGO_apitech_amari05 from "../assets/LOGO_apitech_amari05.svg";
+import app_Store from "../assets/app_Store.png";
+import Play_Store from "../assets/play_Store.png";
+import Rombo from "../assets/Rombo.png";
+import testi1 from "../assets/testi1.png";
+import testi2 from "../assets/testi2.png";
+import testi3 from "../assets/testi3.png";
+import Rombo_verde from "../assets/Rombo_verde.png";
+import Rombo_amarillo from "../assets/Rombo_amarillo.png";
+import LOGO_apitech_verde from "../assets/LOGO_apitech_verde06.svg";
 import {  FaWhatsapp  } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import iG from "../../public/img/iG.png";
-import Facebook from "../../public/img/Facebook.png";
+import iG from "../assets/iG.png";
+import Facebook from "../assets/Facebook.png";
 
 
 const AuthLayout = () => {
   return (
-    <div className="inset-8 min-h-screen flex flex-col bg-[#003643] text-white relative overflow-hidden" style={{
-        backgroundImage: `url(${{Rombo_verde}})`,
+    <div className="inset-8 min-h-screen flex flex-col bg-[#003643] text-white  overflow-hidden" style={{
+        backgroundImage: `url(${Rombo_verde})`
         }}>
           {/* Hexagon pattern background */}
           <div className="container mx-auto px-4 py-8 relative z-10">
@@ -44,12 +44,12 @@ const AuthLayout = () => {
                 <div className="w-1/2 flex justify-end space-x-4">
                   <img src={`${MobileMockup}?height=400&width=00`} alt="Phone 1" className="w-3/3 object-contain" />
                 </div>
-                </div>
+              </div>
                 
               
               
               {/* App store buttons */}
-              <div className="flex items-center mb-12">
+              <div className="flex items-center mb-12">                                                   
                 <button className=" px-6 py-3 rounded-lg flex items-center mr-4">
                 <img src={`${Play_Store}?height=400&width=00`} alt="" className="w-3/3 object-contain" />              
                 </button>
@@ -180,7 +180,8 @@ const AuthLayout = () => {
           {/* Footer */}
           <footer 
             className="bg-[#f5A528] text-white py-8 px-4 rounded-t-lg mt-12" 
-            style={{ backgroundImage: `url(${Rombo_amarillo}?height=400&width=00)` }}
+            style={{ backgroundImage: `url(${Rombo_amarillo})`
+            }}
           >
             <div className="container mx-auto px-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
