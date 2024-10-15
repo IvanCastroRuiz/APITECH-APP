@@ -2,7 +2,7 @@ import { MessageSquare } from "lucide-react"
 import MobileMockup from "../assets/MobileMockup.png"; //MobileMockup.png
 import LOGO_apitech_amari05 from "../assets/LOGO_apitech_amari05.svg";
 import app_Store from "../assets/app_Store.png";
-import Play_Store from "../assets/play_Store.png";
+import Play_Store from "../assets/Play_Store.png";
 import Rombo from "../assets/Rombo.png";
 import testi1 from "../assets/testi1.png";
 import testi2 from "../assets/testi2.png";
