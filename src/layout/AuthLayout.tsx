@@ -19,7 +19,7 @@ import Facebook from "../../public/img/Facebook.png";
 const AuthLayout = () => {
   return (
     <div className="inset-8 min-h-screen flex flex-col bg-[#003643] text-white relative overflow-hidden" style={{
-        backgroundImage: `url(${`${Rombo_verde}?height=400&width=00`})`,
+        backgroundImage: `url(${{Rombo_verde}})`,
         }}>
           {/* Hexagon pattern background */}
           <div className="container mx-auto px-4 py-8 relative z-10">
