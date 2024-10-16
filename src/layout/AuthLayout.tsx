@@ -18,62 +18,75 @@ import Facebook from "../assets/Facebook.png";
 
 const AuthLayout = () => {
   return (
-    <div className="inset-8 min-h-screen flex flex-col bg-[#003643] text-white  overflow-hidden" style={{
-        backgroundImage: `url(${Rombo_verde})`
+    <div className="inset-0 sm:inset-8 min-h-screen flex flex-col bg-[#003643] text-white overflow-hidden p-4 sm:p-8" style={{
+    backgroundImage: `url(${Rombo_verde})`
         }}>
           {/* Hexagon pattern background */}
-          <div className="container mx-auto px-4 py-8 relative z-10">
-            {/* Header */}
-            <header className="flex items-center justify-between mb-12">
-              <div className="flex items-center">
-                <div className="mr-6">
-                  <img src={`${LOGO_apitech_amari05}`} alt="logo" className="w-29 h-24 object-contain" /> {/* Ajusta el tamaño aquí */}
-                </div>
-              </div>
-            </header>
-            <main className="mb-12">
-              <div className="flex items-center justify-between">
-                <div className="w-1/2">
-                  <h1 className="text-[55px] font-bold uppercase mb-6 text-[#F3A42B]" style={{ fontFamily: 'Russo One, sans-serif' }}>
-                    GESTIONA Y MONITOREA <span className="text-[#FFC91C]">TUS COLMENAS </span> DESDE CUALQUIER LUGAR
-                  </h1>
-                  <p className="text-2xl mb-8" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                    Registra monitorea y aprende todo lo necesario para maximizar el rendimiento de tus apiarios con sensores avanzados y guias expertas
-                  </p>
-                </div>
-                <div className="w-1/2 flex justify-end space-x-4">
-                  <img src={`${MobileMockup}?height=400&width=00`} alt="Phone 1" className="w-3/3 object-contain" />
-                </div>
-              </div>
-                
-              
-              
-              {/* App store buttons */}
-              <div className="flex items-center mb-12">                                                   
-                <button className=" px-6 py-3 rounded-lg flex items-center mr-4">
-                <img src={`${Play_Store}?height=400&width=00`} alt="" className="w-3/3 object-contain" />              
-                </button>
-                <button className=" px-6 py-3 rounded-lg flex items-center mr-4">
-                <img src={`${app_Store}?height=400&width=00`} alt="" className="w-3/3 object-contain" />              
-                
-                </button>
-                <span className="text-xl font-semibold">*prueba gratis Máximo 5 colmenas</span>
-              </div>
-            </main>
+          <div className="inset-0 sm:inset-8 min-h-screen flex flex-col bg-[#003643] text-white overflow-hidden p-4 sm:p-8" style={{
+    backgroundImage: `url(${Rombo_verde})`
+}}>
+  <div className="container mx-auto px-4 py-8 relative z-10">
+    {/* Header */}
+    <header className="flex flex-col sm:flex-row items-center justify-between mb-8 sm:mb-12">
+      <div className="flex items-center">
+        <div className="mr-6">
+          <img src={`${LOGO_apitech_amari05}`} alt="logo" className="w-29 h-24 object-contain" />
+        </div>
+      </div>
+    </header>
+    
+    {/* Main content container */}
+    <div className="flex flex-col lg:flex-row items-start justify-between">
+      {/* Left container (text content) */}
+      <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold uppercase mb-4 sm:mb-6 text-[#F3A42B]" style={{ fontFamily: 'Russo One, sans-serif' }}>
+          GESTIONA Y MONITOREA <span className="text-[#FFC91C]">TUS COLMENAS </span> DESDE CUALQUIER LUGAR
+        </h1>
+        <p className="text-lg sm:text-xl mb-6 sm:mb-8" style={{ fontFamily: 'Poppins, sans-serif' }}>
+          Registra monitorea y aprende todo lo necesario para maximizar el rendimiento de tus apiarios con sensores avanzados y guias expertas
+        </p>
+        
+        {/* App store buttons and free trial text */}
+        <div className="flex flex-col items-center lg:items-start mb-8 sm:mb-12">
+          <div className="flex flex-row justify-center lg:justify-start w-full mb-4">
+            <button className="px-4 py-2 rounded-lg flex items-center mr-4">
+              <img src={`${Play_Store}`} alt="Play Store" className="w-24 sm:w-32 object-contain" />                            
+            </button>
+            <button className="px-4 py-2 rounded-lg flex items-center">
+              <img src={`${app_Store}`} alt="App Store" className="w-24 sm:w-32 object-contain" />              
+            </button>
           </div>
+          
+          {/* Phone image for mobile */}
+          <div className="lg:hidden w-full flex justify-center mb-4">
+            <img src={`${MobileMockup}`} alt="Phone 1" className="w-3/4 max-w-xs object-contain" />
+          </div>
+          
+          <span className="text-sm sm:text-xl font-semibold text-center lg:text-left">*prueba gratis Máximo 5 colmenas</span>
+        </div>
+      </div>
+      
+      {/* Right container (phone image for desktop) */}
+      <div className="hidden lg:flex w-1/2 justify-end">
+        <img src={`${MobileMockup}`} alt="Phone 1" className="w-3/4 sm:w-2/3 lg:w-full max-w-md object-contain" />
+      </div>
+    </div>
+  </div>
+</div>
+              
           {/* Benefits section */}
           <section className=" text-black p-30 rounded-lg  mb-">
-            <h2 className="bg-[#FEDE9D] text-2xl font-bold mb-1 text-center rounded-lg">BENEFICIOS PRINCIPALES</h2>
+            <h2 className="bg-[#FEDE9D] text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4 text-center rounded-lg">BENEFICIOS PRINCIPALES</h2>
             {/* Add your benefits content here */}
              {/* New message */}
-          <div className="text-[#F3a42b] text-2xl font-semibold text-center mb-12">
+          <div className="text-[#F3a42b] text-xl sm:text-2xl font-semibold text-center mb-8 sm:mb-12">
             TODO LO QUE NECESITAS PARA GESTIONAR Y MEJORAR TUS APIARIOS
           </div>
 
           {/* Three colored squares */}
-          <div className="flex justify-center space-x-8 mb-12">
+          <div className="flex flex-col lg:flex-row justify-center space-y-8 lg:space-y-0 lg:space-x-8 mb-12">
             {/* First square */}
-            <div className="w-80 h-100 bg-[#FFCD8C] rounded-lg p-6 flex flex-col items-center relative text-black overflow-hidden">
+            <div className="w-full sm:w-80 bg-[#FFCD8C] rounded-lg p-4 sm:p-6 flex flex-col items-center relative text-black overflow-hidden">
             <img src={`${Rombo}?height=400&width=00`} alt="" className="w-1/2 object-contain" />              
               
               <h3 className="text-1xl  mb-1 z-8 font-bold">GESTIÓN DE APIARIOS</h3>
@@ -83,7 +96,7 @@ const AuthLayout = () => {
             </div>
 
               {/* Second square */}
-              <div className="w-80 h-100 bg-[#FFC580] rounded-lg p-6 flex flex-col items-center relative text-black overflow-hidden">
+            <div className="w-full sm:w-80 bg-[#FFCD8C] rounded-lg p-4 sm:p-6 flex flex-col items-center relative text-black overflow-hidden">
               <img src={`${Rombo}?height=400&width=00`} alt="" className="w-1/2 object-contain" />  
                 <h3 className="text-1x1 font-bold mb-1 z-5">SISTEMA DE MONITOREO</h3>
                 <p className="text-center z-9 mb- ">Monitorea la temperatura, humedad y peso de cada colmena en tiempo real gracias a sensores avanzados (disponibles con la compra del sistema)</p>
@@ -94,7 +107,7 @@ const AuthLayout = () => {
               </div>
 
               {/* Third square */}
-              <div className="w-80 h-100 bg-[#FFCD8C] rounded-lg p-6 flex flex-col items-center relative text-black overflow-hidden">
+            <div className="w-full sm:w-80 bg-[#FFCD8C] rounded-lg p-4 sm:p-6 flex flex-col items-center relative text-black overflow-hidden">
               <img src={`${Rombo}?height=400&width=00`} alt="" className="w-1/2 object-contain" />              
               <h3 className="text-1xl font-bold mb-4 z-10">CAPACITACIÓN</h3>
                 <p className="text-center z-9 mb-4">Aprende con guías prácticas sobre instalación, cría, control de plagas y mucho más.</p>
@@ -110,11 +123,11 @@ const AuthLayout = () => {
           </section>
           {/* Casos de Éxito section */}
           <section className=" text-black p-30 rounded-lg  mb-">
-            <h2 className="bg-[#FEDE9D] text-2xl font-bold mb-1 text-center rounded-lg">CASOS DE EXITO</h2>
-            <p className="text-white text-center text-base mb-8" style={{ fontFamily: 'Poppins, sans-serif' }}>
+            <h2 className="bg-[#FEDE9D] text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4 text-center rounded-lg">CASOS DE ÉXITO</h2>
+            <p className="text-white text-center text-sm sm:text-base mb-6 sm:mb-8" style={{ fontFamily: 'Poppins, sans-serif' }}>
               Apicultores que han transformado su gestión con nuestro sistema de monitoreo
             </p>
-            <div className="flex justify-center space-x-8">
+            <div className="flex flex-col lg:flex-row justify-center space-y-8 lg:space-y-0 lg:space-x-8">
               {/* Testimonial 1 */}
               <div className="w-80 bg-white rounded-lg p-6 flex flex-col items-start text-black relative">
                   <img src={`${testi1}?height=400&width=00`} alt="" className="w-1/3 rounded-full" />              
@@ -151,7 +164,7 @@ const AuthLayout = () => {
             </div>
           </section>
           {/* Hexagonal background pattern */}
-          <section className="text-white py-16 px-4">
+          <section className="text-white py-12 sm:py-16 px-4">
             <div className="container mx-auto">
               <div className="flex flex-col lg:flex-row items-start justify-between">
                 <div className="lg:w-1/2 mb-8 lg:mb-0">
@@ -161,8 +174,10 @@ const AuthLayout = () => {
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col items-center">
                   <div className="flex space-x-4 mb-6">
-                  <img src={`${Play_Store}?height=400&width=00`} alt="" className="w-1/3 rounded-full" />
-                  <img src={`${app_Store}?height=400&width=00`} alt="" className="w-1/3 rounded-full" />
+                  <img src={`${Play_Store}`} alt="Play Store" className="w-24 sm:w-32 object-contain" />
+
+                  <img src={`${app_Store}`} alt="app Store" className="w-24 sm:w-32 object-contain" />
+
                   </div>
                   <p className="text-lg mb-6 text-center lg:text-right">
                     Adquiere el sistema de sensores para tus colmenas y monitorea la temperatura, humedad y peso en tiempo real
@@ -179,12 +194,11 @@ const AuthLayout = () => {
           </section>
           {/* Footer */}
           <footer 
-            className="bg-[#f5A528] text-white py-8 px-4 rounded-t-lg mt-12" 
-            style={{ backgroundImage: `url(${Rombo_amarillo})`
-            }}
-          >
+           className="bg-[#f5A528] text-white py-6 sm:py-8 px-2 sm:px-4 rounded-t-lg mt-12" 
+           style={{ backgroundImage: `url(${Rombo_amarillo})` }}
+         >
             <div className="container mx-auto px-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8">
 
                 {/* Primer contenedor */}
                 <div className="flex flex-col items-start col-span-1 sm:col-span-2 lg:col-span-1">
