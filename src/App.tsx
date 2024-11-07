@@ -10,13 +10,6 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<AuthLayout/>}>
-      
-      
-      
-      
-      
-        
-
       </Route>
     </Routes>
     </BrowserRouter>
