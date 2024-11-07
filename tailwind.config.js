@@ -13,7 +13,13 @@ module.exports = {
           'tablet': {'min': '768px', 'max': '1024px'},
           'portatil': {'min': '1025px', 'max': '1366px'},
           'escritorio': {'min': '1367px'},
-        },// Agregamos la fuente "Russo One"
+        },//
+      },
+      maxWidth: {
+        'content-desktop': '1366px',
+        'content-laptop': '1024px',
+        'content-tablet': '767px',
+        'content-mobile': '380px',
       },
     },
   },
