@@ -72,7 +72,7 @@ const AuthLayout = () => {
             {/* Segundo cuadro */}
             {/* Segundo cuadro */}
             <div className="w-full sm:w-80 bg-[#FFCD8C] rounded-lg p-4 sm:p-6 flex flex-col items-center relative text-black overflow-
- transform transition-transform duration-300 hover:scale-105">
+               transform transition-transform duration-300 hover:scale-105">
               <img src={`${MONITOREO}?height=400&width=00`} alt="" className="w-1/2 object-contain" />
               <h3 className="text-1xl font-bold mb-4">SISTEMA DE MONITOREO</h3>
               <p className="text-left text-[16px] mb-3">Monitorea la temperatura, humedad y peso de cada colmena en tiempo real gracias a sensores avanzados (disponibles con la compra del sistema)</p>
