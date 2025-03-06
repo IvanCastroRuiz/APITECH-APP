@@ -222,10 +222,10 @@ const AuthLayout = () => {
 
       </div>
       <footer
-        className="bg-[#f5A528] w-full py-6"
+        className="bg-[#f5A528]  py-4 mb-20"
         style={{ backgroundImage: `url(${Rombo_amarillo})` }}
       >
-        <div className="px-4">
+        <div className="px-4 ">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8">
 
             {/* Primer contenedor */}
@@ -293,8 +293,13 @@ const AuthLayout = () => {
           </div>
         </div>
       </footer>
+      
 
+
+      
     </div>
+     
+     
 
 
 
